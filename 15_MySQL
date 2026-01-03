@@ -1,0 +1,10 @@
+msfconsole -q
+use auxiliary/scanner/mysql/mysql_version
+set RHOST ip
+run
+
+use auxiliary/admin/mysql/mysql_enum
+set RHOST ip
+set USERNAME Name
+SET PASSWORD pass
+Run
