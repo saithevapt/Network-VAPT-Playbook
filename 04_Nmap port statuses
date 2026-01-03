@@ -1,0 +1,17 @@
+🟢 Open
+The port is actively accepting connections and a service is running on it (e.g., HTTP on port 80).
+
+🔴 Closed
+The port is reachable, but no service is listening on it.
+
+🚫 Filtered
+Nmap cannot determine whether the port is open or closed because a firewall or filter is blocking packets.
+
+⚪ Unfiltered
+The port is reachable, but Nmap cannot tell if it is open or closed (usually seen in ACK scans).
+
+🟡 Open | Filtered
+Nmap cannot distinguish whether the port is open or filtered (no response received).
+
+🟠 Closed | Filtered
+The port is either closed or filtered, but Nmap cannot confirm which one.
