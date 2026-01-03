@@ -38,9 +38,7 @@ MySQL
 NFS
 NetBIOS
 SMB
+HTTP / HTTPS
+RDP
 
 👉 If you are a fresher in cybersecurity, follow these notes step by step—this repository will help you move from beginner to medium-level skills in Network VAPT.
-
-HTTP / HTTPS
-
-RDP
