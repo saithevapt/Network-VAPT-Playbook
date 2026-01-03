@@ -1,0 +1,7 @@
+msfconsole -q
+use auxiliary/scanner/http/http_version
+options 
+set RHOST 192.168.1.51
+run
+
+nmap -p 80,443 --script http-methods  <target>
