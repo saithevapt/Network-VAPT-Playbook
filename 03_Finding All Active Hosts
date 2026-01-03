@@ -1,0 +1,5 @@
+nmap 10.0.0.1/24 -sn
+fping -aqg 192.168.1.1/24
+sudo arp-scan 192.168.1.1/24
+sudo netdiscover -i eth0
+Using Angry IP Scanner Tool
