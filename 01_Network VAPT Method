@@ -1,0 +1,61 @@
+                                                                                  Network Penetration Testing 
+
+Steps :
+
+1. Finding All Active Hosts
+Use tools like Nmap, Angry IP Scanner, or Netdiscover to identify live devices in the network.
+
+2. Discovering Open Ports
+Perform port scanning using tools like Nmap or Masscan to identify open ports on active hosts.
+
+3. Detecting Service Versions
+Run version scanning (nmap -sV) to detect which services are running on the open ports and what versions they are.
+
+4. Researching Exploits
+Search for known vulnerabilities and exploits for those specific versions on websites like:
+
+Google
+Exploit-DB = https://www.exploit-db.com/
+https://vulners.com/search/cvss
+https://www.rapid7.com/db/
+                                     
+Searchsploit :
+1. searchsploit keyword
+•	This command is used to search the local Exploit-DB database for exploits related to the keyword you provide.
+•	Example: searchsploit apache
+•	This will show a list of exploits related to "apache".
+________________________________________
+2. searchsploit -p edbid
+•	This command shows detailed information about the exploit identified by the exploit database ID (edbid).
+•	The -p option displays the path to the exploit code on your system and the URL to the Exploit-DB page for more info.
+•	Example : searchsploit -p 12345
+•	Output will include something like:
+
+Exploit Path: /usr/share/exploitdb/exploits/linux/local/12345.c
+Exploit-DB URL: https://www.exploit-db.com/exploits/12345
+________________________________________
+3. searchsploit -m edbid
+•	This command copies the exploit file from the local predefined path to your current working directory.
+•	The -m option stands for mirror (copy).
+•	Example: searchsploit -m 12345
+
+
+5. If Exploit Found – Exploitation
+
+If a working exploit is found (manual or through Metasploit):
+Follow the exploit steps from the source (e.g., Exploit-DB or GitHub).
+Exploit the vulnerability to gain access (e.g., shell, reverse shell, etc.)
+
+
+6. Post-Exploitation (Optional)
+After access: try privilege escalation, gathering sensitive info, or checking lateral movement possibilities.
+
+7. Reporting
+Document everything:
+IP address of the host
+Port and service version
+Vulnerability name and source
+Exploitation method and impact
+Screenshots, logs, and proof-of-concept
+
+Provide risk rating and fix recommendation for each issue.
