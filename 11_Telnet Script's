@@ -1,0 +1,17 @@
+•	telnet-encryption.nse script checks whether encryption is available or negotiated.
+•	sudo tcpdump -i eth0 -A "tcp port 23 and not src host $(hostname -I | cut -d' ' -f1)"
+
+•	telnet-ntlm-info.nse - This checks Telnet (port 23) for NTLM support and pulls info:
+
+If NTLM is Supported — Example Output
+You may get something like:
+PORT   STATE SERVICE
+23/tcp open  telnet
+| telnet-ntlm-info:
+|   NTLM Info:
+|     Target_Name:  COMPANY
+|     NetBIOS_Domain_Name:  COMPANY
+|     NetBIOS_Computer_Name:  WIN-SERVER01
+|     DNS_Domain_Name: company.local
+|     DNS_Computer_Name: WIN-SERVER01.company.local
+|_    Product_Version: 10.0.17763
