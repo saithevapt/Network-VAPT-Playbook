@@ -1,0 +1,7 @@
+nmap 192.168.1.52 -p 25 --script smtp-commands 
+•	List SMTP supported commands
+VRFY → verify user exists
+EXPN → expand mailing list
+RCPT → enumerate via recipient check
+
+nmap 192.168.1.52 -p 25 --script smtp-commands --script-args smtp-enum-users.methods={VRFY}
