@@ -1,0 +1,47 @@
+-sn → Skip port scanning; consider all hosts as alive
+-Pn → Skip host discovery; scan directly for open ports
+-p- → Scan all ports (0–65535)
+-p 20,21,22 → Scan / exclude specific ports
+-p 20-30 → Scan a specific port range
+-n → Disable DNS resolution
+-v → Enable verbose mode
+--top-ports 100 → Scan the top 100 most common ports
+--reason → Display the reason why a port is in a particular state
+--open → Show only open ports in scan results
+
+Service, OS & Advanced Scanning :
+-sV → Enable service version detection
+-O → Enable OS detection
+-A → Enable aggressive scan {OS detection ,Service version detection ,It Run's Default NSE scripts}
+
+Fast & Timing Options :
+-F → Scan most common ports (100)
+
+-T0 to -T5 → Control scan speed
+T0 = Paranoid
+T1 = Sneaky
+T2 = Polite
+T3 = Normal
+T4 = Aggressive (recommended)
+T5 = Insane
+
+Output Options :
+-oA → Output scan results in all formats
+-oX → Output scan results in XML format
+-oN → Output scan results in normal (human-readable) format
+
+Scripting Engine : 
+#-sC → Run Nmap default scripts against the target system
+
+#nmap –script-help scriptname
+•	Display detailed information about a specific nse script.
+
+#nmap –script-update 
+ Download the new nse scripts
+Update existing scripts to new version
+
+NOTE: cd /usr/share/nmap/scripts = where nmap .nse scripts file are stored 
+
+
+
+-sC → Run Nmap default scripts against the target system
