@@ -27,3 +27,26 @@ smb-vuln-ms10-061.nse
 smb-vuln-ms17-010.nse 
 smb-vuln-regsvc-dos.nse
 smb-vuln-webexec.nse
+
+
+
+smbmap -H ip  , smbclient -L //ip/
+•	Enumerate SMB share names
+
+#smbclient -L //ip/sharename
+•	If anonymous login is enabled it will connect to share and display available files in that share
+•	get filename , put filename
+
+#enum4linux -a ip 
+•	It Enumerate user names and group names 
+•	It Enumerate user names and group names , share names , password policy , os version , domain and workgroup names
+
+#enum4linux -U ip
+•	Enumerate usernames
+
+#enum4linux -P ip
+•	Enumerate password policy details
+
+#enum4linux -S ip
+•	Enumerate shares list
+
