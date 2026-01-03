@@ -1,0 +1,51 @@
+•	In Nmap, the flags -sS, -sN, -sF, -sX, and -sA are different scan techniques used to detect open, closed, or filtered ports. Each one behaves differently and is useful in different situations — especially when trying to bypass firewalls or IDS (Intrusion Detection Systems).
+
+1️⃣ TCP SYN Scan (Stealth Scan)
+Scan name: SYN Scan
+Command: nmap -sS <IP>
+Packet sent: ➡️ SYN
+Response: Open: SYN-ACK ✅
+                Closed: RST ❌
+Explanation:Nmap sends a SYN packet. If SYN-ACK is received, the port is open. Nmap does not complete the handshake (stealthy).
+
+2️⃣ TCP Connect Scan
+Scan name: Connect Scan
+Command: nmap -sT <IP>
+Packet sent: ➡️ SYN → SYN-ACK → ACK
+Response: Open: Full TCP handshake completed
+           Closed: RST
+Explanation: Uses OS TCP stack and completes the 3-way handshake. Noisy but reliable.
+
+3️⃣ TCP ACK Scan
+Scan name: ACK Scan
+Command: nmap -sA <IP>
+Packet sent:➡️ ACK
+Response:Unfiltered: RST
+         Filtered: No response / ICMP error
+Explanation: Used to detect firewall rules, not open ports.
+
+4️⃣ TCP FIN Scan
+Scan name: FIN Scan
+Command:nmap -sF <IP>
+Packet sent: ➡️ FIN
+Response: Open: No response
+                Closed: RST
+Explanation: Relies on RFC behavior. Open ports ignore FIN packets.
+
+5️⃣ TCP NULL Scan
+
+Scan name: NULL Scan
+Command: nmap -sN <IP>
+Packet sent: ➡️ No flags set (NULL)
+Response: Open: No response
+               Closed: RST
+Explanation: Packet has no flags. Some systems mishandle it → useful for evasion.
+
+6️⃣ TCP Xmas Scan
+
+Scan name: Xmas Scan
+Command: nmap -sX <IP>
+Packet sent: ➡️ FIN + PSH + URG 🎄
+Response: Open: No response
+          Closed: RST
+Explanation: Flags light up like a Christmas tree. Same logic as FIN/NULL scans.
