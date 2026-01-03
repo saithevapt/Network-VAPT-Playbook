@@ -1,0 +1,20 @@
+#--data-length 50
+•	•  Nmap appends 50 bytes of random data to each probe packet.
+•	•  Packet payload size becomes non-standard.
+•	•  The packet is less recognizable to basic IDS/firewall signatures that expect standard packet sizes.
+
+Example :
+•	Instead of a standard TCP SYN with no data, it becomes:
+o	TCP SYN + 50 bytes of random payload.
+
+#-f 
+•	It fragments IP packets into smaller pieces (typically 8-byte fragments)
+•  For example, one TCP SYN packet (used in scanning) might be ~60 bytes.
+•  With -f, Nmap splits that 60-byte packet into multiple 8-byte fragments.
+
+NOTE: What Happens Without -f , Nmap sends a full TCP SYN packet.
+
+#-g <portno>
+•	It changes the source port number (the port Nmap uses on your machine to send packets).
+
+For Example : Many firewalls allow incoming traffic from port 53 (DNS), so spoofing your scan to appear as DNS traffic may help you bypass firewall rules.
