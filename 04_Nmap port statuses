@@ -1,3 +1,6 @@
+🟢 Host Up: Target responds to Nmap probes (ICMP/TCP/UDP/ARP), confirming the system is reachable.
+🔴 Host Down: No response to Nmap probes, indicating the system is unreachable or blocked by a firewall.
+
 🟢 Open
 The port is actively accepting connections and a service is running on it (e.g., HTTP on port 80).
 
