@@ -1,3 +1,5 @@
+* Evasion in Nmap is the technique of modifying scan behavior to bypass firewalls, IDS/IPS, and security filters while scanning a target.
+
 #--data-length 50
 •	•  Nmap appends 50 bytes of random data to each probe packet.
 •	•  Packet payload size becomes non-standard.
