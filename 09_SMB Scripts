@@ -2,10 +2,8 @@
 Port Number: 445
 
 #smb-os-discovery
-OS & Version (e.g., Windows 6.1 - Windows 7)
-Samba Version (if the target is running Samba)
-Computer Name (NetBIOS name or hostname)
-System Time (current time on the remote machine)
+
+It Gather: OS & Version (e.g., Windows 6.1 - Windows 7), Samba Version (if the target is running Samba), Computer Name (NetBIOS name or hostname), System Time (current time on the remote machine)
 
 [ OR ] 
 
@@ -14,22 +12,25 @@ use auxiliary/scanner/smb/smb_version
 set RHOSTS <target-ip>
 run
 
+• Scans the target to identify the SMB version and OS details
+
+
 #smb-protocols
 •	 To detect supported SMB protocol versions on a target system.
 
 #--script smb-vuln-*
-•	It run this script’s
-smb-vuln-conficker.nse
-smb-vuln-cve2009-3103.nse
-smb-vuln-cve-2017-7494.nse
-smb-vuln-ms06-025.nse
-smb-vuln-ms07-029.nse
-smb-vuln-ms08-067.nse
-smb-vuln-ms10-054.nse
-smb-vuln-ms10-061.nse
-smb-vuln-ms17-010.nse 
-smb-vuln-regsvc-dos.nse
-smb-vuln-webexec.nse
+It run this script’s :
+• smb-vuln-conficker.nse – Checks for systems vulnerable to the Conficker worm via SMB.
+• smb-vuln-cve2009-3103.nse – Detects SMB vulnerability related to CVE-2009-3103 causing remote crash or code execution.
+• smb-vuln-cve-2017-7494.nse – Tests for Samba remote code execution vulnerability (CVE-2017-7494).
+• smb-vuln-ms06-025.nse – Checks for MS06-025 SMB vulnerability allowing remote code execution.
+• smb-vuln-ms07-029.nse – Detects MS07-029 vulnerability in SMB services.
+• smb-vuln-ms08-067.nse – Checks for MS08-067, a critical SMB remote code execution flaw.
+• smb-vuln-ms10-054.nse – Tests for MS10-054 SMB client vulnerability.
+• smb-vuln-ms10-061.nse – Detects MS10-061 SMB Print Spooler remote code execution vulnerability.
+• smb-vuln-ms17-010.nse – Checks for MS17-010 (EternalBlue) SMB vulnerability.
+• smb-vuln-regsvc-dos.nse – Tests for SMB registry service denial-of-service vulnerability.
+• smb-vuln-webexec.nse – Checks for SMB web execution vulnerability allowing remote command execution.
 
 
 
