@@ -1,3 +1,6 @@
+A relational database management system used to store and manage application data.
+Port Number:3306
+
 msfconsole -q
 use auxiliary/scanner/mysql/mysql_version
 set RHOST ip
