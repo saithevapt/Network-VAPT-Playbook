@@ -1,3 +1,6 @@
+🗂️ SMB (Server Message Block): A network protocol used for file sharing, printer access, and inter-process communication over a network.
+Port Number: 445
+
 #smb-os-discovery
 OS & Version (e.g., Windows 6.1 - Windows 7)
 Samba Version (if the target is running Samba)
