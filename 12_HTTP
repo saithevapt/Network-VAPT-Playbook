@@ -6,5 +6,7 @@ use auxiliary/scanner/http/http_version
 options 
 set RHOST 192.168.1.51
 run
+#Identifies the web server software and version running on the target host
 
 nmap -p 80,443 --script http-methods  <target>
+#Enumerates allowed HTTP methods to detect insecure or misconfigured web servers
