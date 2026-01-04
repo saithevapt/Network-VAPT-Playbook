@@ -1,2 +1,5 @@
+🖥️ RDP (Remote Desktop Protocol): A Microsoft protocol used for remote graphical access to Windows systems.
+Port Number:3389
+
 rdp-enum-encryption tells whether RDP is using weak legacy encryption or modern TLS + NLA.
 rdp-ntlm-info
