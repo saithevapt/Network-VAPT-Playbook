@@ -1,44 +1,48 @@
 This repository contains Network Vulnerability Assessment & Penetration Testing (VAPT) notes focused on practical network security testing and enumeration techniques.
 
-📌 What This Repository Covers
 
-🔍 Active Host Discovery
+1.🔍 Active Host Discovery
+ICMP-based discovery
+ARP-based discovery
+TCP-based discovery
 
-Identifying live hosts in a network
+2.🚩Nmap Scan Flags & Scan Types
+TCP SYN Scan
+TCP Connect Scan
+ACK Scan
+FIN / NULL / Xmas Scans
+Port state interpretation
 
-ICMP, ARP, and TCP-based discovery techniques
+3.🕵️Evasion Techniques
+Firewall evasion basics
+IDS/IPS evasion concepts
+Timing templates
+Packet manipulation
 
-🚩 Nmap Scan Flags & Scan Types
+4.📜Nmap Scripting Engine (NSE)
+Default scripts
+Safe scripts
+Auth scripts
+Vuln scripts
 
-TCP SYN, Connect, ACK, FIN, NULL, Xmas, UDP scans
+5.🤖 Automated Vulnerability Detection
+Vulners integration
+Vulscan integration
 
-Understanding port states and responses
+6.🔐 Service Enumeration
+FTP (21)
+SSH (22)
+Telnet (23)
+SMTP (25)
+HTTP / HTTPS (80 / 443)
+NetBIOS (137–139)
+SMB (445)
+MySQL (3306)
+NFS (2049)
+RDP (3389)
 
-🕵️ Evasion Techniques
+7.📝 Vulnerability Report Writing
 
-Firewall and IDS/IPS evasion basics
+🚀Learning Outcome : By following these notes step by step, learners can progress from beginner to intermediate-level skills in Network VAPT, with both technical testing and professional reporting exposure.
 
-Timing, packet manipulation, and scan optimization
-
-📜 Nmap Scripting Engine (NSE)
-
-Default, safe, auth, vuln, and discovery scripts
-
-Script-based service enumeration
-
-🔐 Service Enumeration Covered
-
-This repository includes service-specific enumeration techniques for:
-
-FTP
-SSH
-Telnet
-SMTP
-MySQL
-NFS
-NetBIOS
-SMB
-HTTP / HTTPS
-RDP
-
-👉 If you are a fresher in cybersecurity, follow these notes step by step—this repository will help you move from beginner to medium-level skills in Network VAPT.
+Discovery scripts
