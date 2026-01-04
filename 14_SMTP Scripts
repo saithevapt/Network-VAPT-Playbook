@@ -8,3 +8,4 @@ EXPN → expand mailing list
 RCPT → enumerate via recipient check
 
 nmap 192.168.1.52 -p 25 --script smtp-commands --script-args smtp-enum-users.methods={VRFY}
+#Enumerating SMTP users
