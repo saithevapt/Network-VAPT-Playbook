@@ -1,3 +1,6 @@
+🖥️ Telnet: A remote access protocol used to connect to another system via command line, without encryption.
+Port Number:23
+
 •	telnet-encryption.nse script checks whether encryption is available or negotiated.
 •	sudo tcpdump -i eth0 -A "tcp port 23 and not src host $(hostname -I | cut -d' ' -f1)"
 
