@@ -1,3 +1,10 @@
+🖧 NetBIOS (Network Basic Input/Output System): A network service that enables name resolution, session management, and file/printer sharing on local networks.
+
+Port Numbers:
+📡 UDP 137 – Name Service
+📢 UDP 138 – Datagram Service
+🔗 TCP 139 – Session Service
+
 nbtscan ip 
 •	NETBIOS computer name get for linux machines
 
