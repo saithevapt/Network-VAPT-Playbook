@@ -1,3 +1,6 @@
+HTTP (HyperText Transfer Protocol): Used for transferring web pages and data between a client (browser) and a web server, without encryption.
+Port Number:80 
+
 msfconsole -q
 use auxiliary/scanner/http/http_version
 options 
