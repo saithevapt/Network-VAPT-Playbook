@@ -1,3 +1,10 @@
+📂FTP (File Transfer Protocol): Used to transfer files between a client and a server over a network.
+
+Port Number:
+🔐 Port 21 – Control/Command channel
+📦 Port 20 – Data transfer channel (active mode)
+
+
 #ftp-anon.nse
 
 { OR] 
