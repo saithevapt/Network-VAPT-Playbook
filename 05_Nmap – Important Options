@@ -38,10 +38,8 @@ Scripting Engine :
 
 #nmap –script-update 
  Download the new nse scripts
-Update existing scripts to new version
+ Update existing scripts to new version
+
+#--script scriptname: Runs a specific Nmap NSE script to detect vulnerabilities, enumerate services, or gather detailed information from the target.
 
 NOTE: cd /usr/share/nmap/scripts = where nmap .nse scripts file are stored 
-
-
-
--sC → Run Nmap default scripts against the target system
