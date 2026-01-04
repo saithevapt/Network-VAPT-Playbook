@@ -1,3 +1,6 @@
+Used for sending emails between mail servers and clients.
+Port Numbers:25
+
 nmap 192.168.1.52 -p 25 --script smtp-commands 
 •	List SMTP supported commands
 VRFY → verify user exists
