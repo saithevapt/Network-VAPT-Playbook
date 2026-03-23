@@ -20,3 +20,13 @@ NOTE: What Happens Without -f , Nmap sends a full TCP SYN packet.
 •	It changes the source port number (the port Nmap uses on your machine to send packets).
 
 For Example : Many firewalls allow incoming traffic from port 53 (DNS), so spoofing your scan to appear as DNS traffic may help you bypass firewall rules.
+
+
+-T0 
+--max-rate 5
+-D RND:5
+-scan-delay 5s
+--randomize-hosts
+-mtu 16
+--badsum
+--script firewall-bypass
