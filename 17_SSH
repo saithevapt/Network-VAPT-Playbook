@@ -1,4 +1,6 @@
 nc webbingprotechnologies.com 22
 nmap -p22 --script ssh-auth-methods 
+
 nmap -p22 --script ssh2-enum-algos webbingprotechnologies.com { weak algorithms check } 
+https://github.com/jtesta/ssh-audit
 
