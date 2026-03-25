@@ -4,6 +4,9 @@ Port Number:
 🔐 Port 21 – Control/Command channel
 📦 Port 20 – Data transfer channel (active mode)
 
+
+#Check ftp port is open or not ? https://www.ftplive.com/ftp/
+
 #Version Grab
 use auxiliary/scanner/ftp/ftp_version
 set RHOSTS <IP>
